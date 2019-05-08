@@ -1,0 +1,6 @@
+include ':app',
+        ':easeui',
+        ':sweetalertdialoglibrary',
+        ':test', ':fileselectlibrary',
+        ':pulltorefreshlibrary',
+        ':coordinatortablayout'

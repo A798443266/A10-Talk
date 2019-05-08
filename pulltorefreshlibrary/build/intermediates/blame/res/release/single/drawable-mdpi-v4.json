@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "D:\\Adroid_Project\\Test1\\library\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\drawable-mdpi\\default_ptr_flip.png"
+    },
+    {
+        "merged": "D:\\Adroid_Project\\Test1\\library\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\drawable-mdpi\\indicator_arrow.png"
+    },
+    {
+        "merged": "D:\\Adroid_Project\\Test1\\library\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\drawable-mdpi\\default_ptr_rotate.png"
+    }
+]

@@ -1,0 +1,154 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Adroid_Project\\Test1\\library\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "6,7,4,5,3",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "223,287,111,166,56",
+                        "endColumns": "63,63,54,56,54",
+                        "endOffsets": "282,346,161,218,106"
+                    },
+                    "to": {
+                        "startLines": "77,78,79,80,81",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "3573,3637,3701,3756,3813",
+                        "endColumns": "63,63,54,56,54",
+                        "endOffsets": "3632,3696,3751,3808,3863"
+                    }
+                },
+                {
+                    "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\values\\ids.xml",
+                    "from": {
+                        "startLines": "3,5,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "56,133,95",
+                        "endColumns": "38,40,37",
+                        "endOffsets": "90,169,128"
+                    },
+                    "to": {
+                        "startLines": "82,83,84",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "3868,3906,3946",
+                        "endColumns": "37,39,36",
+                        "endOffsets": "3901,3941,3978"
+                    }
+                },
+                {
+                    "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\values\\attrs.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endLines": "77",
+                        "endColumns": "24",
+                        "endOffsets": "3595"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "76",
+                        "endColumns": "24",
+                        "endOffsets": "3568"
+                    }
+                },
+                {
+                    "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\values\\pull_refresh_strings.xml",
+                    "from": {
+                        "startLines": "8,10,9,3,5,4",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "390,600,492,56,206,128",
+                        "endColumns": "101,113,107,71,69,77",
+                        "endOffsets": "487,709,595,123,271,201"
+                    },
+                    "to": {
+                        "startLines": "85,86,87,88,89,90",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "3983,4085,4199,4307,4379,4449",
+                        "endColumns": "101,113,107,71,69,77",
+                        "endOffsets": "4080,4194,4302,4374,4444,4522"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "D:\\Adroid_Project\\Test1\\library\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\values\\dimens.xml",
+                    "from": {
+                        "startLines": "6,7,4,5,3",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "223,287,111,166,56",
+                        "endColumns": "63,63,54,56,54",
+                        "endOffsets": "282,346,161,218,106"
+                    },
+                    "to": {
+                        "startLines": "77,78,79,80,81",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "3573,3637,3701,3756,3813",
+                        "endColumns": "63,63,54,56,54",
+                        "endOffsets": "3632,3696,3751,3808,3863"
+                    }
+                },
+                {
+                    "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\values\\ids.xml",
+                    "from": {
+                        "startLines": "3,5,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "56,133,95",
+                        "endColumns": "38,40,37",
+                        "endOffsets": "90,169,128"
+                    },
+                    "to": {
+                        "startLines": "82,83,84",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "3868,3906,3946",
+                        "endColumns": "37,39,36",
+                        "endOffsets": "3901,3941,3978"
+                    }
+                },
+                {
+                    "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\values\\attrs.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "56",
+                        "endLines": "77",
+                        "endColumns": "24",
+                        "endOffsets": "3595"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "76",
+                        "endColumns": "24",
+                        "endOffsets": "3568"
+                    }
+                },
+                {
+                    "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\values\\pull_refresh_strings.xml",
+                    "from": {
+                        "startLines": "8,10,9,3,5,4",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "390,600,492,56,206,128",
+                        "endColumns": "101,113,107,71,69,77",
+                        "endOffsets": "487,709,595,123,271,201"
+                    },
+                    "to": {
+                        "startLines": "85,86,87,88,89,90",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "3983,4085,4199,4307,4379,4449",
+                        "endColumns": "101,113,107,71,69,77",
+                        "endOffsets": "4080,4194,4302,4374,4444,4522"
+                    }
+                }
+            ]
+        }
+    ]
+}

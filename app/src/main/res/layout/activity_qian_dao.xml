@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_white"
+    tools:context=".activity.QianDaoActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <com.eiplan.zuji.qiandao.SignDate
+        android:id="@+id/signDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </com.eiplan.zuji.qiandao.SignDate>
+
+    <Button
+        android:id="@+id/btn_qiandao"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="签到+5"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/color_white"
+        android:background="@drawable/login_button_bg1"/>
+
+</LinearLayout>

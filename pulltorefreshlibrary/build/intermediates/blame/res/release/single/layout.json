@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Adroid_Project\\Test1\\library\\build\\intermediates\\res\\merged\\release\\layout\\pull_to_refresh_header_vertical.xml",
+        "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\layout\\pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "D:\\Adroid_Project\\Test1\\library\\build\\intermediates\\res\\merged\\release\\layout\\pull_to_refresh_header_horizontal.xml",
+        "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\layout\\pull_to_refresh_header_horizontal.xml"
+    }
+]

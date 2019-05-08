@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/home_bg"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/cv_user_pic"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/p"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cv_user_pic"
+            android:text="李小明"
+            android:textColor="@color/color_system_blank"
+            android:textSize="14sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_jifen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="18dp"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/icon_jifen"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_problem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="这里是问题的名称"
+        android:textColor="#cc000000"
+        android:textSize="15sp"/>
+
+    <com.eiplan.zuji.view.TextViewExpandableAnimation
+        android:id="@+id/tv_problem_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:tvea_textContentSize="14sp"
+        app:tvea_expandBitmap="@drawable/icon_green_arrow_down"
+        app:tvea_expandLines="3"
+        app:tvea_textContentColor="#88000000"
+        app:tvea_shrinkBitmap="@drawable/icon_green_arrow_up"
+        app:tvea_textExpand="全部"
+        app:tvea_textShrink="收起"
+        app:tvea_textStateColor="@color/colorPrimaryDark"/>
+
+    <LinearLayout
+        android:id="@+id/ll_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:background="@drawable/ease_default_image"
+            android:scaleType="fitXY"/>
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="8dp"/>
+
+    </LinearLayout>
+
+    <!--<GridView
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:columnWidth="120dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-02-06 12:57"
+            android:textColor="@color/color_system_gray"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_comment"
+                android:layout_width="16dp"
+                android:layout_height="14dp"
+                android:background="@drawable/icon_pinglun"/>
+
+            <TextView
+                android:id="@+id/tv_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="35dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_zan"
+                android:layout_width="16dp"
+                android:layout_height="14dp"
+                android:background="@drawable/iocn_vedio_zan"/>
+
+            <TextView
+                android:id="@+id/tv_zan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123"
+                android:textSize="12sp"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

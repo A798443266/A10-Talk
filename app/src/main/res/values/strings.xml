@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" tools:ignore="MissingTranslation">拓客</string>
+
+    <string name="expand" tools:ignore="MissingTranslation">expand</string>
+    <string name="shrink" tools:ignore="MissingTranslation">shrink</string>
+
+
+    <!--通话方面的提示信息-->
+    <string name="call_accepted" tools:ignore="MissingTranslation">通话已接通</string>
+    <string name="call_busy" tools:ignore="MissingTranslation">对方正忙</string>
+    <string name="call_cancel" tools:ignore="MissingTranslation">已取消</string>
+    <string name="call_cancel_is_incoming" tools:ignore="MissingTranslation">对方已取消</string>
+    <string name="call_connecting" tools:ignore="MissingTranslation">正在呼叫对方</string>
+    <string name="call_connected" tools:ignore="MissingTranslation">正在等待对方接受呼叫申请</string>
+    <string name="call_connected_is_incoming" tools:ignore="MissingTranslation">对方申请与你进行通话</string>
+    <string name="call_connection_fail" tools:ignore="MissingTranslation">建立连接失败</string>
+    <string name="call_disconnected" tools:ignore="MissingTranslation">通话已结束</string>
+    <string name="call_duration_time" tools:ignore="MissingTranslation">通话时长</string>
+    <string name="call_no_data" tools:ignore="MissingTranslation">没有通话数据</string>
+    <string name="call_not_answer" tools:ignore="MissingTranslation">对方未接听</string>
+    <string name="call_no_response" tools:ignore="MissingTranslation">对方可能在忙，建议稍后拨打</string>
+    <string name="call_offline" tools:ignore="MissingTranslation">对方不在线</string>
+    <string name="call_network_unstable" tools:ignore="MissingTranslation">网络状态不佳</string>
+    <string name="call_network_normal" tools:ignore="MissingTranslation">网络状态良好</string>
+    <string name="call_reject" tools:ignore="MissingTranslation">对方已拒绝</string>
+    <string name="call_reject_is_incoming" tools:ignore="MissingTranslation">已拒绝</string>
+    <string name="call_local_version_smaller" tools:ignore="MissingTranslation">本地版本过低，无法通讯</string>
+    <string name="call_opposite_version_smaller" tools:ignore="MissingTranslation">对方版本过低，无法通讯</string>
+    <string name="call_version_different" tools:ignore="MissingTranslation">双方通讯协议不同，无法通讯</string>
+    <string name="call_video_pause" tools:ignore="MissingTranslation">视频传输已暂停</string>
+    <string name="call_video_resume" tools:ignore="MissingTranslation">视频传输已恢复</string>
+    <string name="call_video_calling" tools:ignore="MissingTranslation">视频通话进行中</string>
+    <string name="call_voice_pause" tools:ignore="MissingTranslation">语音传输已暂停</string>
+    <string name="call_voice_resume" tools:ignore="MissingTranslation">语音传输已恢复</string>
+    <string name="call_voice_calling" tools:ignore="MissingTranslation">语音通话进行中</string>
+
+</resources>

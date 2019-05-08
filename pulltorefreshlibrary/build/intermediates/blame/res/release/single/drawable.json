@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Adroid_Project\\Test1\\library\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_bottom.xml",
+        "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\drawable\\indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "D:\\Adroid_Project\\Test1\\library\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
+        "source": "D:\\Adroid_Project\\Test1\\library\\src\\main\\res\\drawable\\indicator_bg_top.xml"
+    }
+]

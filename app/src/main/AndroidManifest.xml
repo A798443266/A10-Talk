@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.eiplan.zuji">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 读取网络信息状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取当前wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!-- 配置权限，用来记录应用配置信息 -->
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission
+        android:name="android.permission.ACCESS_MOCK_LOCATION"
+        tools:ignore="MockLocation,ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 网易云信直播推流需要的权限 -->
+
+
+    <!-- 允许程序使用闪光灯 -->
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <!-- 允许程序获得设备信息 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!-- 声明程序使用camera和自动对焦功能 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <!-- 读取启动设置 -->
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <!-- 悬浮窗权限 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity android:name=".activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity android:name=".activity.SearchActivity" />
+        <activity android:name=".activity.DocDetailsActivity" />
+        <activity android:name=".activity.ExpertDetailsActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+
+        <!-- 设置环信应用的AppKey -->
+        <meta-data
+            android:name="EASEMOB_APPKEY"
+            android:value="1195180731228667#eiplan" />
+        <!-- 声明SDK所需的service SDK核心功能 -->
+        <service
+            android:name="com.hyphenate.chat.EMChatService"
+            android:exported="true" />
+        <service
+            android:name="com.hyphenate.chat.EMJobService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <!-- 声明SDK所需的receiver -->
+        <receiver android:name="com.hyphenate.chat.EMMonitorReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+            <!-- 可选filter -->
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 显示下载大图页面 -->
+        <activity
+            android:name="com.hyphenate.easeui.ui.EaseShowBigImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/horizontal_slide" />
+
+        <!--环信easeUI播放视频的页面-->
+        <activity android:name="com.hyphenate.easeui.ui.EaseShowVideoActivity"/>
+
+        <activity android:name="com.hyphenate.easeui.ui.EaseBaiduMapActivity" />
+        <!-- 百度地图所需的service -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <receiver android:name="com.hyphenate.easeui.ui.CallReceiver">
+            <intent-filter>
+                <action android:name="com.hyphenate.action.incomingcall" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 友盟分享和第三方登录所用的activity -->
+        <!-- 微信 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            tools:ignore="DuplicateActivity" />
+
+        <!-- qq -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101546670" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- 领英 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name=".activity.ChatActivity" />
+        <activity android:name=".activity.RecommendDocActivity" />
+        <activity android:name=".activity.RobotChatActivity" />
+        <activity android:name=".activity.BindPhoneActivity" />
+        <activity android:name=".activity.RankActivity" />
+        <activity android:name=".activity.PersonalInfoActivity" />
+        <activity
+            android:name=".activity.SelectPhoneActivity"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity android:name=".activity.LiveStreamActivity" />
+        <activity android:name=".activity.LivePlayActivity" />
+        <activity android:name=".activity.RoomSettingActivity" />
+        <activity android:name=".activity.RecommendMSGActivity" />
+        <activity android:name=".activity.MsgDetailsActivity" />
+        <activity
+            android:name=".activity.GuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VedioDetailsActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.buyDocActivity"
+            android:theme="@style/MyDialogStyleBottom" />
+        <activity android:name=".activity.SelectIndustryActivity" />
+        <activity android:name=".activity.ReleaseProblemActivity" />
+        <activity android:name=".activity.PhotoActivity" />
+        <activity android:name=".activity.MyFriendsActivity" />
+        <activity android:name=".activity.GroupListActivity" />
+        <activity android:name=".activity.NewGroupActivity" />
+        <activity android:name=".activity.PickContactActivity" />
+        <activity android:name=".activity.GroupDetailActivity" />
+        <activity android:name=".activity.MyExpertActivity" />
+        <activity
+            android:name=".activity.PingFenActivity"
+            android:theme="@style/MyDialogStyleBottom1" />
+        <activity android:name=".activity.MyWalletActivity" />
+        <activity android:name=".activity.CollectionExpertActivity" />
+        <activity android:name=".activity.MyDocActivity" />
+        <activity android:name=".activity.ReleaseDocActivity" />
+        <activity android:name=".activity.SettingActivity" />
+        <activity android:name=".activity.BecomeExpertActivity" />
+        <activity android:name=".activity.MypointActivity" />
+        <activity android:name=".activity.ProblemDetailsActivity" />
+        <activity android:name=".activity.MyAnswerActivity" />
+        <activity android:name=".activity.InviteActivity" />
+        <activity android:name=".activity.MyCustomerActivity" />
+        <activity
+            android:name=".activity.NoExpertActivity"
+            android:theme="@style/MyDialogStyleBottom1" />
+        <activity android:name=".activity.ReleaseVideoActivity" />
+        <activity android:name=".activity.UpdateVideoActivity" />
+        <activity android:name=".activity.AddFriendActivity" />
+        <activity android:name=".activity.GotoAnswerActivity" />
+
+        <!-- 视频通话界面 -->
+        <activity
+            android:name=".single.VideoCallActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.UpdateDocActivity" />
+        <activity android:name=".activity.BigPhotoActivity" />
+        <activity android:name=".activity.AddFriend2Activity" />
+        <activity
+            android:name=".activity.DocViewActivity"
+            android:theme="@style/MyDialogStyleBottom1" />
+        <activity android:name=".activity.SystemNotifyActivity" />
+        <activity android:name=".activity.DemandDetailsActivity" />
+        <activity android:name=".activity.QianDaoActivity" />
+        <activity android:name=".activity.ReleaseDemandActivity" />
+        <activity android:name=".activity.MyDemandsActivity" />
+        <activity android:name=".activity.StudyActivity" />
+        <activity android:name=".activity.AllKindsActivity" />
+        <activity android:name=".activity.StudyDtailsActivity" />
+        <activity
+            android:name=".activity.ReLivePlayActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".activity.MyStudyActivity" />
+        <activity android:name=".activity.TradeRecordActivity" />
+        <activity
+            android:name=".activity.LookSubjectActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.ReleaseStudyCommendActivity"></activity>
+    </application>
+
+</manifest>

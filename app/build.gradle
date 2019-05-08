@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+
+// 添加插件
+apply plugin: 'com.mob.sdk'
+
+// 在MobSDK的扩展中注册SMSSDK的相关信息
+MobSDK {
+    appKey "29d33bb796c5b"
+    appSecret "01f875624b5f47b87c64666f70607cef"
+
+    SMSSDK {}
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.eiplan.zuji"
+        minSdkVersion 16
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        ndk {
+            abiFilters "armeabi", "armeabi-v7a"
+            // 如果您使用的是商业版，只能使用 armeabi 架构，即：
+            // abiFilters "armeabi",
+        }
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    configurations.all {
+        resolutionStrategy.force "com.android.support:support-v4:28.0.0"
+    }
+
+}
+
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //    动态权限申请框架
+    implementation 'com.github.hotchemi:permissionsdispatcher:3.1.0'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:3.1.0'
+    implementation 'com.youth.banner:banner:1.4.10'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    //    圆形图片框架
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    //    科大讯飞语音sdk
+    implementation files('libs/Msc.jar')
+    implementation files('libs/Sunflower.jar')
+    //noinspection GradleCompatible
+    //    implementation 'com.android.support:support-v4:23.1.1'
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    //    联网框架
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation 'com.alibaba:fastjson:1.1.70.android'
+    implementation files('libs/umeng-share-core-6.9.4.jar')
+    implementation files('libs/umeng-share-email-6.9.4.jar')
+    implementation files('libs/umeng-share-linkedin-6.9.4.jar')
+    implementation files('libs/umeng-share-QQ-simplify-6.9.4.jar')
+    implementation files('libs/umeng-share-wechat-simplify-6.9.4.jar')
+    implementation files('libs/umeng-sharetool-6.9.4.jar')
+    implementation files('libs/volley.jar')
+    implementation files('libs/umeng-common-2.0.0.jar')
+    implementation project(':easeui')
+    implementation files('libs/eventbus-3.1.1.jar')
+    implementation project(':sweetalertdialoglibrary')
+    implementation files('libs/Livestreaming-3.1.1.jar')
+    implementation files('libs/VideoEffect-3.1.1.jar')
+    implementation(name: 'LiteAVSDK_Professional_5.4.6097', ext: 'aar')
+    implementation 'cn.bingoogolapple:bga-banner:2.2.5@aar'
+    implementation 'com.gjiazhe:wavesidebar:1.3'
+    implementation files('libs/pinyin4j-2.5.0.jar')
+    implementation 'cn.jzvd:jiaozivideoplayer:6.0.0'
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-14'
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0-alpha-14'
+    implementation 'com.wx.goodview:goodview:1.0.0'
+    implementation 'com.github.CB-ysx:CBRatingBar:3.0.1'
+    implementation 'com.sdsmdg.tastytoast:tastytoast:0.1.1'
+    implementation project(':fileselectlibrary')
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.xyz.step:step:1.0.4'
+    implementation 'com.github.JayFang1993:DropDownMenu:v0.9'
+    implementation 'com.white:progressview:1.0.1'
+    //下载进度条
+    implementation 'net.steamcrafted:load-toast:1.0.12'
+    //    implementation 'com.loopeer.library:cardstack:1.0.2'
+    //    implementation 'com.nightonke:boommenu:2.0.8'
+    implementation 'com.zhy:magic-viewpager:1.0.1'
+    //图片查看器
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+    implementation 'com.github.zzz40500:android-shapeLoadingView:1.0.3.2'
+    implementation 'com.brucetoo.pickview:library:1.2.3'
+    implementation project(':pulltorefreshlibrary')
+    //    implementation 'cn.hugeterry.coordinatortablayout:coordinatortablayout:1.2.2'
+    implementation project(':coordinatortablayout')
+}

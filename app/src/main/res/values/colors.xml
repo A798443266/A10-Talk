@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#2694e9</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="bottom_text_unselect">#929292</color>
+    <color name="bottom_text_select">#2694e9</color>
+    <color name="bottom_text_select1">#ef9900</color>
+
+    <color name="system_blue">#2694e9</color>
+
+    <color name="color_white">#fff</color>
+    <color name="color_system_gray">#888</color>
+    <color name="color_system_gray1">#11000000</color>
+    <color name="color_system_blank">#333</color>
+    <color name="color_zhifu">#ee7114</color>
+    <color name="color_release">#fafafa</color>
+
+    <color name="select_bg">#e5e5e5</color>
+    <color name="select_bg1">#f1f1f1</color>
+    <color name="select_bg3">#f8f8f8</color>
+
+
+    <color name="me1">#74a5f4</color>
+    <color name="me2">#f15561</color>
+    <color name="me3">#27c6ac</color>
+    <color name="me4">#fbae0e</color>
+    <color name="me5">#ffaec9</color>
+
+
+
+
+
+    <color name="vm_theme_background">#fffff8f8</color>
+    <color name="vm_black_12">#1e212121</color>
+    <color name="vm_green_87">#dd039e00</color>
+    <color name="vm_transparent">#00000000</color>
+    <color name="vm_black_54">#89212121</color>
+    <color name="vm_black_87">#dd212121</color>
+    <color name="vm_white_87">#ddffffff</color>
+    <color name="vm_red_87">#dde51c23</color>
+    <color name="vm_black_38">#61212121</color>
+
+</resources>

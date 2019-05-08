@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.PingFenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/pingjia_bg"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小李"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/color_system_blank"/>
+
+            <com.cb.ratingbar.CBRatingBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:starSize="18dp"
+                app:starCount="10"
+                app:starSpace="10dp"
+                app:starStrokeWidth="1dp"
+                app:starCanTouch="true"
+                app:starMaxProgress="10"
+                app:starShowStroke="true"
+                app:starProgress="5.5"
+                />
+
+
+            <EditText
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="start"
+                android:lines="6"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/tv_search_bg"
+                android:hint="请您对本次服务进行评价"/>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:text="提交"
+                android:textSize="16sp"
+                android:textColor="@color/color_white"
+                android:background="@drawable/btn_pingjia"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

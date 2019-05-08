@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="70dp"
+    android:layout_height="20dp"
+    android:gravity="center"
+    android:background="@drawable/industry_category_bg">
+
+    <TextView
+        android:id="@+id/tv_industry_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="信息技术"
+        android:textColor="#333"
+        android:textSize="12sp" />
+
+</LinearLayout>
